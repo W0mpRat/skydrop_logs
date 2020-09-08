@@ -11,6 +11,13 @@ async function main () {
     const years = await fsp.readdir(`${path}`)
 
     for (const year of years) {
+      // Only log Current Year
+      var d = new Date()
+      var n = d.getFullYear()
+      if (year !== n.toString()) {
+        continue
+      }
+      // End only log current year
       const days = await fsp.readdir(`${path}${year}`)
 
       for (const day of days) {
