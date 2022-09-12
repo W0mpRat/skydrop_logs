@@ -1,7 +1,7 @@
 const xlsx = require('xlsx')
 const fsp = require('fs').promises
 const fs = require('fs')
-const path = 'H:/LOGS/'
+const path = 'F:/LOGS/'
 const IGCParser = require('igc-parser');
 // const path = './flight_logs/
 
